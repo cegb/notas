@@ -1,0 +1,36 @@
+Pasos para crear/agregar GIT a un proyecto existente:
+
+1) Con el git bash, ubicarse en la carpeta del proyecto a agregar.
+
+2) Crea repositorio local:   git init
+
+3) Agrega archivos:    git add .   (git add --all)
+
+4) Hacer commit:    git commit -m "Comentario del commit"
+
+NOTA: Ya hasta este paso, se ha creado el repositorio LOCAL.
+¿Cómo conectar el repo LOCAL con Github?
+
+5) 	Abrir Github. En la pantalla principal, pulsar el boton "NEW" para crear nuevo repositorio (botón verde).
+
+6) Colocar el "Repository name"  (sin espacios, ni caracteres especiales)
+
+7) Colocar una "Description" (opcional)
+
+8) Presionar el botón "Create repository". (VERDE)
+
+9) Al crear el repositorio, GitHub nos entrega los comandos para enlazar el repo
+	local al remoto. Son:
+	
+		git remote add origin git@github.com:{cegb/notas.git}    ## el contenido entre corchetes varía según usuario y nombre del repo.
+		git branch -M master
+		git push -u origin master
+
+LISTO!!!!
+
+Una vez realizados los pasos anteriores, para actualizar nuestro repositorio, solo necesita lo siguiente:
+
+	git add .
+	git commit -m "Mensaje deseado"
+	git push
+	
