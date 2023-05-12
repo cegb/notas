@@ -46,3 +46,4 @@ with open(salida, "w", encoding="utf-8", newline='') as outfile:
     escribir.writerow(["nombre","apellido","rut","promedio"])  ## en caso de requerir colocar encabezado (header)
     escribir.writerows(data_salida)
 
+print("Programa finalizado...!")
